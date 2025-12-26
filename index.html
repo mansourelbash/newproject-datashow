@@ -158,20 +158,20 @@ var timeline = new TL.Timeline('timeline-embed', timelineData, {
 var autoplayInterval = null;
 var autoplayDelay = 2500; // 5 seconds
 
-function startAutoplay(){
-    autoplayInterval = setInterval(function(){
-        timeline.goToNext();
-    }, autoplayDelay);
-}
+// function startAutoplay(){
+//     autoplayInterval = setInterval(function(){
+//         timeline.goToNext();
+//     }, autoplayDelay);
+// }
 
-function stopAutoplay(){
-    clearInterval(autoplayInterval);
-}
+// function stopAutoplay(){
+//     clearInterval(autoplayInterval);
+// }
 
 /* Start autoplay when timeline is ready */
-timeline.on('loaded', function(){
-    startAutoplay();
-});
+// timeline.on('loaded', function(){
+//     startAutoplay();
+// });
 
 /* Pause autoplay when user interacts */
 $('#timeline-embed').on('mouseenter touchstart', function(){
