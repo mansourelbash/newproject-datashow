@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>التسلسل الزمني للهاشميين</title>
+
+<!-- Google Fonts: Cairo -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Cairo', Tahoma, Arial, sans-serif;
+    background: linear-gradient(to bottom,#e8f0ff,#ffffff);
+}
+header {
+    background: #003a8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+#timeline-embed {
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+footer {
+    background: #003a8f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+.tl-rtl .tl-text-content p{
+    margin-top: 24px;
+    font-size: 28px;
+      font-family:  'Amiri', Arial, sans-serif;
+}
+
+.tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6, .tl-timeline h2.tl-headline-title{
+      font-family:  'Amiri', Arial, sans-serif !important;
+}
+
+.tl-timeline .tl-headline-date, .tl-timeline h3.tl-headline-date{
+    font-size: 35px !important;
+    font-family:  'Amiri', Arial, sans-serif !important;
+    margin-bottom: 20px;
+    color: #f00
+}
+.tl-rtl .tl-text-content p{
+    color: #003a8f
+}
+</style>
+</head>
+
+<body>
+
+<header>ملوك الأردن – التسلسل الزمني</header>
+
+<div id="timeline-embed"></div>
+
+<footer>
+    إعداد المعلمة : شروق الشقران 
+</footer>
+
+<script>
+$(function(){
+
+var timelineData = {
+  "title": {
+    "text": {
+      "headline": " الهاشميون عبر التاريخ - نتاجات التعلم",
+      "text": "رحلة ممتعة في حياة الهاشميين"
+    }
+  },
+  "events": [
+    {
+      "start_date": {"year":1921},
+      "text": {"headline":"الملك المؤسس عبدالله الاول بن الحسين","text":"اعلن قيام الدولة الاردنية المستندة الى مبادىء الثورة العربيه الكبرى باسم حكومة شرق الاردن وتاسيس اول حكومة اردنية .."},
+      "media": {"url":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cecil_Beaton_Photographs-_Political_and_Military_Personalities%3B_Abdullah%2C_King_of_Jordan%3B_Abdullah%2C_King_of_Jordan_CBM1666.jpg/330px-Cecil_Beaton_Photographs-_Political_and_Military_Personalities%3B_Abdullah%2C_King_of_Jordan%3B_Abdullah%2C_King_of_Jordan_CBM1666.jpg"}
+    },
+      {
+      "start_date": {"year":1928},
+      "text": {"headline":"الملك المؤسس عبدالله الاول بن الحسين","text":"اصدر اول دستور اساسي للاردن وضع اسس الحكم والدستور الاردني."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS034q52OLalu6Eb1qq5L_-ft1ZwryPVgCEAw&s"}
+    },
+    {
+      "start_date": {"year":1946,"month":5,"day":25},
+      "text": {"headline":"الملك المؤسس عبدالله الاول بن الحسين","text":"إعلان استقلال المملكة الأردنية الهاشمية."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7t5hgN98iT51Ld5eWAikJ0a6gLbvd7kKlA&s"}
+    },
+
+    {
+      "start_date": {"year":1950},
+      "text": {"headline":"الملك المؤسس عبدالله الاول بن الحسين","text":"إعلن عن توحيد الضفتين الاردنية والفلسطينية تحت اسم المملكة الأردنية الهاشمية. ولقب بملك المملكة الاردنية الهاشمية"},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgxs9W4b21cgMJhw7TEXDMGVM1JT7R9Gtcw&s"}
+    },
+
+   {
+      "start_date": {"year":1951},
+      "text": {"headline":"الملك المؤسس عبدالله الاول بن الحسين","text":" استشهد الملك عبدالله الاول بن الحسين في القدس على ابواب المسجد الاقصى ."},
+      "media": {"url":"https://royalheritage.jo/wp-content/uploads/2024/05/a-personal-portrait-of-his-majesty-king-abdullah-1.jpeg"}
+    },
+
+    {
+      "start_date": {"year":1952},
+      "text": {"headline":"الملك طلال بن عبدالله","text":"  تولي الملك طلال الحكم وتعديل الدستور الأردني واقرار مجانية التعليم ."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-DL3nnrwonI3RE9-9IgtVOMDBfCnzNGoYQ&s"}
+    },
+
+    {
+      "start_date": {"year":1952,"month":8,"day":11},
+      "text": {"headline":"الملك الحسين بن طلال","text":"تولي الملك الحسين الحكم وبناء الأردن الحديث."},
+      "media": {"url":"https://upload.wikimedia.org/wikipedia/commons/7/73/Hussein_of_Jordan_in_1997.jpg"}
+    },
+
+    {
+      "start_date": {"year":1956},
+      "text": {"headline":"الملك الحسين بن طلال","text":"تعريب قيادة الجيش الأردني. "},
+      "media": {"url":"https://nl.gov.jo/EBV4.0/Root_Storage/ar/eb_photo_gallery/%D8%A7%D9%84%D9%85%D8%BA%D9%81%D9%88%D8%B1_%D9%84%D9%87_%D8%A8%D8%A5%D8%B0%D9%86_%D8%A7%D9%84%D9%84%D9%87_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%A7%D9%84%D8%AD%D8%B3%D9%8A%D9%86_%D8%A8%D9%86_%D8%B7%D9%84%D8%A7%D9%84_%D9%81%D9%8A_%D8%A5%D8%AD%D8%AF%D9%89_%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA.jpg"}
+    },
+    {
+      "start_date": {"year":1968,"month":3,"day":21},
+      "text": {"headline":"الملك الحسين بن طلال","text":"معركة الكرامة وانتصار الجيش العربي الأردني على القوات الإسرائيلية."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSseipKzYrai8Cm5I_QtYcOJWgezgV8KloP0Q&s"}
+    },
+    {
+      "start_date": {"year":1999,"month":2,"day":7},
+      "text": {"headline":"الملك الحسين بن طلال","text":"وفاة الملك الحسين بن طلال بعد حكم دام 46 عاماً."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq_poNafX8OpRF46Y3qkiXfQgghl3BopzVcQ&s"}
+    },
+
+    {
+      "start_date": {"year":1999,"month":2,"day":7},
+      "text": {"headline":"الملك عبدالله الثاني","text":"تولي الملك عبدالله الثاني الحكم واستمرار النهضة الأردنية."},
+      "media": {"url":"https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQetIcC031Eui1B2axPXrKwiV83k1gsBEqweC74knwIx5E57bNNO-LT97eewa73zQSknlgJB05X77JgU4k"}
+    },
+       {
+      "start_date": {"year":2002},
+      "text": {"headline":"الملك عبدالله الثاني","text":"إطلاق مبادرة الملك عبدالله الثاني للتعليم. وتطوير المستشفيات والمراكز الصحية في المملكة. وتحديث الطرق والبنية التحتية واهتم بالمتقاعدين العسكريين والتوسيع من برامج الحماية الاجتماعية."},
+      "media": {"url":"https://royalheritage.jo/wp-content/uploads/2021/06/51233469347_b231fe3097_o-1.jpg"}
+    }
+  ]
+};
+
+var timeline = new TL.Timeline('timeline-embed', timelineData, {
+    language: 'ar',
+    initial_zoom: 5
+});
+
+var autoplayInterval = null;
+var autoplayDelay = 2500; // 5 seconds
+
+function startAutoplay(){
+    autoplayInterval = setInterval(function(){
+        timeline.goToNext();
+    }, autoplayDelay);
+}
+
+function stopAutoplay(){
+    clearInterval(autoplayInterval);
+}
+
+/* Start autoplay when timeline is ready */
+timeline.on('loaded', function(){
+    startAutoplay();
+});
+
+/* Pause autoplay when user interacts */
+$('#timeline-embed').on('mouseenter touchstart', function(){
+    stopAutoplay();
+});
+
+/* Resume when user leaves */
+$('#timeline-embed').on('mouseleave touchend', function(){
+    startAutoplay();
+});
+
+});
+</script>
+
+</body>
+</html>
