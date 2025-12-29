@@ -73,6 +73,21 @@ footer {
 <script>
 $(function(){
 
+  function fixArabicDates() {
+  document.querySelectorAll('.tl-headline-date').forEach(el => {
+    let txt = el.textContent.trim();
+
+    const match = txt.match(/^(.+?)\s+(\d+),\s*(\d{4})$/);
+    if (!match) return;
+
+    const month = match[1];
+    const day   = match[2];
+    const year  = match[3];
+
+    el.textContent = `${day} ${month} ${year}`;
+  });
+}
+
 var timelineData = {
   "title": {
     "text": {
@@ -182,6 +197,11 @@ $('#timeline-embed').on('mouseenter touchstart', function(){
 $('#timeline-embed').on('mouseleave touchend', function(){
     startAutoplay();
 });
+
+setTimeout(fixArabicDates, 500);
+
+document.getElementById('timeline-embed')
+  .addEventListener('click', () => setTimeout(fixArabicDates, 200));
 
 });
 </script>
